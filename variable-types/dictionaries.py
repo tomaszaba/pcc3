@@ -4,24 +4,24 @@
 
 ## ---- Create a dictionary ----------------------------------------------------
 
-hana = {
-    "nationality": "lander",
+person = {
+    "nationality": "Moz",
     "Sex": "female",
-    "age": "26",
-    "first_name": "Hana",
-    "last_name": "Kasim",
-    "city": "Hargeisa"
+    "age": "16",
+    "first_name": "John",
+    "last_name": "Doe",
+    "city": "Molocue"
 }
 
 ### Loop over ----
-for iv, i in hana.items():
+for iv, i in person.items():
     print(f"\nKey: {iv}")
     print(f"\tValue: {i}")
 
-for val in hana.values():
+for val in person.values():
     print(f"{val}")
 
-for val in sorted(hana.values()):
+for val in sorted(person.values()):
     print(val)
 
 ## ---- Exercise ---------------------------------------------------------------
@@ -42,4 +42,4 @@ for country in rivers_in_moz.values():
     print(country.title()) 
 
 ## ---- List of dictionaries ---------------------------------------------------
-dics = [hana, rivers_in_moz]
+dics = [person, rivers_in_moz]
