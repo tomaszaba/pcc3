@@ -48,3 +48,15 @@ while active:
         break
     else:
         print(message)
+
+### Moving items from one list to another ----
+unconfirmed_invitees = ["Tomás", "José", "Luis", "João"]
+confirmed = []
+
+while unconfirmed_invitees:
+    for invitee in unconfirmed_invitees:
+        check = input(f"Hey, {invitee}, Are you coming to the party?")
+        if check == "yes":
+            confirmed.append(invitee)
+    break
+print(f"All confirmed users: {confirmed}")
