@@ -60,3 +60,10 @@ while unconfirmed_invitees:
             confirmed.append(invitee)
     break
 print(f"All confirmed users: {confirmed}")
+
+### Remove all instances of specific values from a list ----
+pets = ["dogs", "cats", "goldfish", "rabbit", "cats", "cats", "dogs"]
+
+while "cats" in pets: 
+    pets.remove("cats")
+print(pets)
