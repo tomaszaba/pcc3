@@ -6,22 +6,15 @@
 ## ---- Exercise 10-6 ----------------------------------------------------------
 
 ### A simple programme that requests user's input for processing ----
-def ask_for_number(prompt):
-    """Keep asking until user provides a valid integer."""
-    while True:
-        try:
-            value = int(input(prompt))
-            return value
-        except ValueError:
-            print("❌ Sorry, that's not a number. Please try again 💪")
-
-# Use the helper function
-print("Hello, welcome to `mwana` library website.")
-
-age = ask_for_number("👉 Kindly tell us your age: ")
-work_years = ask_for_number("👉 How many years of work experience do you have? ")
-
-print(f"\n✅ Thanks! You entered: Age = {age}, Work years = {work_years}")
+while True:
+    try:
+        value = int(input("Kindly tell us your age: "))
+    except ValueError:
+        print("Sorry, that is not a number. Please try again")
+    else: 
+        x = value * 4
+        print(f"You are {x}")
+        break
 
 ### Handle errors silently ----
 try:
